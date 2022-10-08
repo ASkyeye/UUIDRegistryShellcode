@@ -48,7 +48,7 @@ int main() {
         if (RegSetKeyValueA(HKEY_CURRENT_USER, env, uuid, REG_SZ, uuids[i], 37))
             return Error("[-] Failed in RegSetKeyValueA\n");
         
-	Sleep(1000);
+	Sleep(100);
         printf("[+] %s created under HKEY_CURRENT_USER/%s\n", uuid, env);
 
     }
